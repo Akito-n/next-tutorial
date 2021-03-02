@@ -19,9 +19,9 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Head>
+      {/* <Head>
         <title>{siteTitle}</title>
-      </Head>
+      </Head> */}
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
 
@@ -38,9 +38,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
 
-        <Link href="/posts/first-post">
-          <a>first post</a>
-        </Link>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
